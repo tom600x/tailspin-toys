@@ -101,6 +101,10 @@ npm run typecheck:all    # both of the above
 
 This project ships Copilot customizations to assist with quality assurance:
 
+### Work Triage Kanban Board Canvas
+
+The shared **Work Triage Kanban Board** canvas (`.github/extensions/kanban-board/`) provides an interactive triage board for prioritizing repository issues. It highlights the top 3 high-impact tasks with justifications and descriptions, lists remaining backlog issues, and offers one-click action buttons to inject an issue's complete context into the current Copilot session to begin work immediately.
+
 ### Database Explorer Canvas
 
 The shared **Database Explorer** canvas (`.github/extensions/database-explorer/`) provides a small UI and agent actions for browsing the project's SQLite tables and running one read-only `SELECT` or `WITH` query at a time. It uses the database at `.data/tailspin.db` (or `DATABASE_URL` when set), so run `npm run db:setup` before opening it in a fresh checkout.
